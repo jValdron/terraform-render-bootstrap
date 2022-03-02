@@ -3,7 +3,7 @@ kind: IPPool
 metadata:
   name: default-ipv4-ippool
 spec:
-  blockSize: 24
+  blockSize: 26
   cidr: ${pod_cidr}
   ${network_encapsulation}
   natOutgoing: true
