@@ -21,6 +21,7 @@ spec:
     - kube-scheduler
     - --authentication-kubeconfig=/etc/kubernetes/pki/scheduler.conf
     - --authorization-kubeconfig=/etc/kubernetes/pki/scheduler.conf
+    - --bind-address=0.0.0.0
     - --kubeconfig=/etc/kubernetes/pki/scheduler.conf
     - --leader-elect=true
     livenessProbe:
